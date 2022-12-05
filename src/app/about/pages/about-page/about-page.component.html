@@ -1,0 +1,39 @@
+<header class="hero">
+  <div class="container">
+    <h6>About us</h6>
+    <h1>A digital platform for a sustainable remote workforce.</h1>
+    <p>
+      We aim to upskill diverse talent by providing access to lifelong career
+      opportunities.
+    </p>
+    <section class="hero_metrics">
+      <div *ngFor="let item of metrics">
+        <img [src]="item.icon" />
+        <span class="hero_metrics_value">{{ item.value }}</span>
+        <span class="hero_metrics_label">{{ item.label }}</span>
+      </div>
+    </section>
+  </div>
+</header>
+<section class="employees block">
+  <div class="container">
+    <h3>Who you'll be working with</h3>
+    <div class="block_items">
+      <about-employee
+        *ngFor="let employee of employees"
+        [avatar]="employee.avatar"
+        [name]="employee.name"
+        [position]="employee.position"
+        [flag]="employee.flag"
+      ></about-employee>
+    </div>
+  </div>
+</section>
+<section class="jobs block">
+  <div class="container">
+    <h3>Our latest jobs</h3>
+    <div class="block_items">
+        <about-opening *ngFor="let opening of openings" [data]="opening"></about-opening>
+    </div>
+   </div>
+</section>

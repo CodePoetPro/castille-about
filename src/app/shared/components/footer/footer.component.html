@@ -1,0 +1,29 @@
+<footer>
+    <div class="container">
+        <h2>Specialist talent, globally.</h2>
+        <section class="columns">
+            <div  class="mobile-hide"  *ngFor="let data of directory">
+                <h6>{{data.title}}</h6>
+                <ul>
+                    <li *ngFor="let link of data.links">{{link}}</li>
+                </ul>
+            </div>
+            <div>
+                <h6>
+                    CONTACT US
+                </h6>
+                <ul>
+                    <li>(+356) 20 933 000</li>
+                    <li>support@castillians.com</li>
+                </ul>
+            </div>
+        </section>
+        <section class="footnote">
+            <img [src]="icon" *ngFor="let icon of socialIcons">
+            <span>Accesibility</span>
+            <span>Cookie Policy</span>
+            <span>Privacy Policy</span>              
+        </section>
+        
+    </div>
+</footer>

@@ -1,0 +1,100 @@
+.hero {
+  position: relative;
+  text-align: center;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
+  padding-bottom: 80px;
+  padding-top: 60px;
+  &::before{
+    position: absolute;
+    content: ' ';
+    background-image: url('../../../../assets/hero-image-left.png');
+    height: 142px;
+    width : 192px;
+    background-size: contain;
+    top : 82px;
+    left: 10%;
+    @media (max-width: 700px) {
+      top : unset;
+      left: 10px;
+    }
+  }
+  &::after{
+    position: absolute;
+    content: ' ';
+    background-image: url('../../../../assets/hero-image-right.png');
+    height: 142px;
+    width : 192px;
+    background-size: contain;
+    top : 82px;
+    right: 10%;
+    @media (max-width: 700px) {
+      top : unset;
+      right: 10px;
+    }
+  }
+  h6 {
+    color: var(--primary-color);
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  h1 {
+    font-size: var(--display-size);
+    margin-bottom: 50px;
+  }
+  p {
+    font-size: var(--p-size);
+
+  }
+  &_metrics {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+    margin-top: 70px;
+    @media (max-width: 700px) {
+      margin-top: 280px;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 18px;
+      img {
+        height: 40px;
+      }
+    }
+    &_value{
+        font-size: var(--heading-size);
+        font-weight: 600;
+    }
+    &_label{
+        font-size: var(--p-size);
+    }
+  }
+}
+.block{
+    background-color: #fff;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    h3{
+        font-weight: 600px;
+        margin-bottom: 60px;
+        font-size: var(--heading-size);
+    }
+    &_items{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 32px;
+    }
+}
+
+.jobs{
+    padding-bottom: 150px;
+}
+

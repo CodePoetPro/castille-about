@@ -1,0 +1,20 @@
+<nav class="navbar">
+    
+    <section class="navbar_left">
+        <img src="assets/LOGO.svg">
+        <ul>
+            <li *ngFor="let link of links">{{link}}</li>
+        </ul>
+    </section>
+    <section class="navbar_right">
+        <img src="assets/search-icon.svg">
+        <button class="primary-button">Register for jobs</button>
+        <button class="clear-button">Log in</button>
+        <button class="clear-button">Hire Talent</button>
+        <button class="hamburger clear-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </section>
+</nav>
