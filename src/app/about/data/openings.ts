@@ -38,7 +38,5 @@ export const openings = [
         },
         skills : ['Operations', 'Software Developer', 'Python']
     },
-   
-
 ]
 
