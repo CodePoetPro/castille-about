@@ -1,13 +1,13 @@
 {
     "version": 2,
     "public": true,
-    "name": "castile-about",
+    "name": "castille-about",
     "rewrites": [
       { "source": "/(.*)", "destination": "/api" }
     ],
     "functions": {
       "api/index.js": {
-        "includeFiles": "dist/castile-about/browser/**"
+        "includeFiles": "dist/castille-about/browser/**"
       }
     }
   }
